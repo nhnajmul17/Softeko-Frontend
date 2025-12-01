@@ -6,6 +6,9 @@ import Counter from '@/components/problems/problem2';
 import ResponsiveLayout from '@/components/problems/problem3';
 import CardHoverEffect from '@/components/problems/problem4';
 import NavigationBar from '@/components/problems/problem5';
+import MatrixSum from '@/components/problems/problem6';
+import StringReverse from '@/components/problems/problem7';
+import FindLargest from '@/components/problems/problem8';
 import StudentInfoForm from '@/submissions/others/ExamineeInfoForm';
 import ExamQuestions from '@/submissions/others/ExamQuestions';
 import ExamInstructions from '@/submissions/others/ExamInstructions';
@@ -143,7 +146,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-6 mt-8 bg-white rounded-lg shadow-lg">
+        <div className="p-6 mt-8 mb-6 bg-white rounded-lg shadow-lg">
           <h2 className="mb-4 text-2xl font-semibold text-gray-800">Problem 5: CSS Positioning & Sticky Navigation Challenge</h2>
           <p className="mb-4 text-gray-600">
             This page combines multiple CSS positioning challenges: sticky navigation with glassmorphism, 
@@ -174,6 +177,51 @@ export default function Home() {
                 <NavigationBar />
               </ErrorBoundary>
             </div>
+          </div>
+        </div>
+
+        {/* Problem 6 */}
+        <div className="p-6 mb-8 bg-white rounded-lg shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold text-gray-800">Problem 6: 2D Array Sum</h2>
+          <p className="mb-4 text-gray-600">
+            Complete the function that calculates the sum of all elements in a 2D array (matrix).
+            Test your implementation with different matrices!
+          </p>
+          
+          <div className="mb-4 border-2 border-gray-300 rounded-lg">
+            <ErrorBoundary problemName="Problem 6" filePath="components/problems/problem6.js">
+              <MatrixSum />
+            </ErrorBoundary>
+          </div>
+        </div>
+
+        {/* Problem 7 */}
+        <div className="p-6 mb-8 bg-white rounded-lg shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold text-gray-800">Problem 7: String Reversal</h2>
+          <p className="mb-4 text-gray-600">
+            Write a function that reverses a string without using the built-in reverse() method.
+            Implement your own logic to reverse the characters!
+          </p>
+          
+          <div className="mb-4 border-2 border-gray-300 rounded-lg">
+            <ErrorBoundary problemName="Problem 7" filePath="components/problems/problem7.js">
+              <StringReverse />
+            </ErrorBoundary>
+          </div>
+        </div>
+
+        {/* Problem 8 */}
+        <div className="p-6 mb-8 bg-white rounded-lg shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold text-gray-800">Problem 8: Find Largest Number</h2>
+          <p className="mb-4 text-gray-600">
+            Complete the function that finds the largest number in an array.
+            Your solution should work with any array of numbers!
+          </p>
+          
+          <div className="mb-4 border-2 border-gray-300 rounded-lg">
+            <ErrorBoundary problemName="Problem 8" filePath="components/problems/problem8.js">
+              <FindLargest />
+            </ErrorBoundary>
           </div>
         </div>
       </div>

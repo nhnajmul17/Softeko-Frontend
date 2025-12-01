@@ -19,7 +19,7 @@ function ExamInstructions() {
         <div className="p-4 border-l-4 border-blue-500 rounded bg-blue-50">
           <h3 className="mb-2 text-lg font-bold text-blue-800">📚 Exam Overview</h3>
           <p className="text-sm text-gray-700">
-            This exam has <strong>two sections</strong>: Section A (7 Theoretical Questions) and Section B (5 Practical Problems). 
+            This exam has <strong>two sections</strong>: Section A (10 Theoretical Questions) and Section B (8 Practical Problems). 
             Your answers are <strong>auto-saved</strong> as you type.
           </p>
         </div>
@@ -38,7 +38,7 @@ function ExamInstructions() {
         <div className="p-4 border-l-4 border-green-500 rounded bg-green-50">
           <h3 className="mb-2 text-lg font-bold text-green-800">2️⃣ Section A: Theoretical Questions</h3>
           <ul className="space-y-1 text-sm text-gray-700">
-            <li>• Answer all 7 questions in the provided text areas</li>
+            <li>• Answer all 10 questions in the provided text areas</li>
             <li>• Your answers are <strong>auto-saved</strong> after 1 second of no typing</li>
             <li>• You can see the save status (✓ Saved) after each save</li>
             <li>• Write clear and concise answers demonstrating your understanding</li>
@@ -62,6 +62,9 @@ function ExamInstructions() {
                 <p className="text-gray-700">Problem 3: <span className="font-semibold text-blue-600">components/problems/problem3.js</span></p>
                 <p className="text-gray-700">Problem 4: <span className="font-semibold text-blue-600">components/problems/problem4.js</span></p>
                 <p className="text-gray-700">Problem 5: <span className="font-semibold text-blue-600">components/problems/problem5.js</span></p>
+                <p className="text-gray-700">Problem 6: <span className="font-semibold text-blue-600">components/problems/problem6.js</span></p>
+                <p className="text-gray-700">Problem 7: <span className="font-semibold text-blue-600">components/problems/problem7.js</span></p>
+                <p className="text-gray-700">Problem 8: <span className="font-semibold text-blue-600">components/problems/problem8.js</span></p>
               </div>
             </div>
           </div>

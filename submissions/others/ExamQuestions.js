@@ -9,7 +9,7 @@ const questions = [
   },
   {
     id: 2,
-    question: "Describe the different data types in JavaScript"
+    question: "Difference between \"type\" and \"interface\" in TypeScript?"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const questions = [
   },
   {
     id: 5,
-    question: "What are cookies and how do they differ from localStorage?"
+    question: "Generics in TypeScript: What are they and why use them?"
   },
    {
     id: 6,
@@ -31,6 +31,19 @@ const questions = [
     id: 7,
     question: "How does client-side rendering differ from server-side rendering in Next.js?"
   },
+  {
+    id: 8,
+    question: "What is the difference between 'git pull' and 'git fetch'?"
+  },
+  {
+    id: 9,
+    question: "What is the purpose of creating branches in Git? How do you create and switch to a new branch?"
+  },
+  {
+    id: 10,
+    question: "What is a closure in JavaScript? Provide an example of how closures are useful."
+  },
+
 ];
 
 function ExamQuestions() {
@@ -41,7 +54,10 @@ function ExamQuestions() {
     answer4: '',
     answer5: '',
     answer6: '',
-    answer7: ''
+    answer7: '',
+    answer8: '',
+    answer9: '',
+    answer10: ''
   });
   const [saveStatus, setSaveStatus] = useState('');
   const [loading, setLoading] = useState(true);
@@ -74,7 +90,10 @@ function ExamQuestions() {
             answer4: result.data.answer4 || '',
             answer5: result.data.answer5 || '',
             answer6: result.data.answer6 || '',
-            answer7: result.data.answer7 || ''
+            answer7: result.data.answer7 || '',
+            answer8: result.data.answer8 || '',
+            answer9: result.data.answer9 || '',
+            answer10: result.data.answer10 || ''
           };
           setAnswers(serverAnswers);
           localStorage.setItem('examAnswers', JSON.stringify(serverAnswers));
